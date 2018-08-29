@@ -29,7 +29,7 @@ Each pod in the mesh must be running an Istio compatible sidecar. The sidecar is
 
 Manual injection modifies the controller configuration, e.g. deployment. It does this by modifying the pod template spec such that all pods for that deployment are created with the injected sidecar. Adding/Updating/Removing the sidecar requires modifying the entire deployment.
 
-Automatic injection injects at pod creation time. The controller resource is unmodified. Sidecars can be updated selectively by manually deleting a pods or systematically with a deployment rolling update.
+Automatic injection injects at pod creation time. The controller resource is unmodified. Sidecars can be updated selectively by manually deleting pods or systematically with a deployment rolling update.
 
 The following command will enable automatic injection for the `default` namespace:
 ```
